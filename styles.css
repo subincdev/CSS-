@@ -1,0 +1,528 @@
+* {
+  font-family: Gaegu, cursive;
+  margin: 0px;
+  padding: 0px;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+:root {
+  --pri: #fffaca;
+  --sec: #abd9eb;
+  --point: #ffb246;
+}
+
+body {
+  text-align: center;
+  background-color: var(--sec);
+}
+
+.water {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(135, 177, 245);
+  top: 590px;
+  width: 100%;
+  height: 100%;
+  animation: 0.7s ease 0s infinite alternate none running 물둥둥;
+}
+
+.water > p {
+  font-size: 150px;
+  color: white;
+}
+
+.center {
+  width: 1000px;
+  height: 1000px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.weird_duck {
+  position: relative;
+}
+
+.duck {
+  animation: 1s ease 0s infinite alternate none running 오리둥둥;
+}
+
+.body_right_fur {
+  position: absolute;
+  background-color: var(--pri);
+  left: 59%;
+  top: 650px;
+  transform: translate(-50%, -50%) rotate(175deg);
+  width: 30px;
+  height: 30px;
+  border-radius: 0% 50%;
+  margin: 0px auto;
+  animation: 1s ease 0s infinite alternate none running 오른쪽털움직임;
+}
+
+.body_left_fur {
+  position: absolute;
+  background-color: var(--pri);
+  left: 41%;
+  top: 630px;
+  transform: translate(-50%, -50%) rotate(100deg);
+  width: 50px;
+  height: 50px;
+  border-radius: 0px 100%;
+  margin: 0px auto;
+  animation: 0.8s ease 0s infinite alternate none running 왼쪽털움직임;
+}
+
+.body_neck {
+  position: absolute;
+  background-color: var(--pri);
+  left: 50%;
+  top: 500px;
+  transform: translate(-50%, -50%) rotate(180deg);
+  width: 85px;
+  height: 100px;
+  margin: 0px auto;
+}
+
+.body_middle {
+  position: absolute;
+  background-color: var(--pri);
+  left: 50%;
+  top: 580px;
+  transform: translate(-50%, -50%);
+  width: 260px;
+  height: 200px;
+  border-radius: 60px 60px 100px 100px;
+  margin: 0px auto;
+}
+
+.wing_right {
+  position: absolute;
+  background-color: var(--pri);
+  left: 58%;
+  top: 560px;
+  transform: translate(-50%, -50%) rotate(-120deg);
+  box-shadow: rgba(0, 0, 0, 0.1) -30px -20px 20px -18px;
+  width: 150px;
+  height: 130px;
+  border-radius: 200px 60px 100px 0px;
+  animation: 0.8s ease 0s infinite alternate none running 오른쪽날개푸드덕;
+}
+
+.wing_left {
+  position: absolute;
+  background-color: var(--pri);
+  left: 42%;
+  top: 560px;
+  transform: translate(-50%, -50%) rotate(120deg);
+  box-shadow: rgba(0, 0, 0, 0.1) 30px -20px 20px -18px;
+  width: 150px;
+  height: 130px;
+  border-radius: 60px 200px 0px 100px;
+  animation: 0.9s ease 0s infinite alternate none running 왼쪽날개푸드덕;
+}
+
+.wing_fur2_right {
+  position: absolute;
+  background-color: var(--pri);
+  left: 640px;
+  top: 540px;
+  transform: translate(-50%, -50%) rotate(-50deg);
+  width: 55px;
+  height: 55px;
+  border-radius: 0px 100% 0px 70%;
+  margin: 0px auto;
+}
+
+.wing_fur2_right_mask {
+  position: absolute;
+  background-color: var(--sec);
+  left: 663px;
+  top: 527px;
+  transform: translate(-50%, -50%) rotate(15deg);
+  box-shadow: rgba(0, 0, 0, 0.1) 30px -20px 20px -18px;
+  width: 70px;
+  height: 30px;
+  border-radius: 0px 0px 100px 100px;
+}
+
+.wing_fur_right {
+  position: absolute;
+  background-color: var(--pri);
+  left: 640px;
+  top: 570px;
+  transform: translate(-50%, -50%) rotate(-40deg);
+  width: 55px;
+  height: 55px;
+  border-radius: 0px 100% 0px 70%;
+  margin: 0px auto;
+  animation: 1s ease 0s infinite alternate none running 오른쪽윙털움직임;
+}
+
+.wing_fur_left {
+  position: absolute;
+  background-color: var(--pri);
+  left: 345px;
+  top: 587px;
+  transform: translate(-50%, -50%) rotate(-30deg);
+  box-shadow: rgba(0, 0, 0, 0.1) 30px -20px 20px -18px;
+  width: 45px;
+  height: 40px;
+  border-radius: 0px 0px 0px 100px;
+}
+
+.wing_fur_left_mask {
+  position: absolute;
+  background-color: var(--sec);
+  left: 325px;
+  top: 565px;
+  transform: translate(-50%, -50%) rotate(-30deg);
+  /* box-shadow: rgba(0, 0, 0, 0.1) 30px -20px 20px -18px; */
+  width: 55px;
+  height: 50px;
+  border-radius: 0px 0px 0px 100px;
+}
+
+.wing_fur2 {
+  position: absolute;
+  background-color: var(--pri);
+  left: 357px;
+  top: 565px;
+  transform: translate(-50%, -50%) rotate(-50deg);
+  width: 55px;
+  height: 55px;
+  border-radius: 0px 100% 0px 70%;
+  margin: 0px auto;
+  animation: 1s ease 0s infinite alternate none running 윙털움직임;
+}
+
+.wing_fur3_left {
+  position: absolute;
+  background-color: var(--pri);
+  left: 350px;
+  top: 550px;
+  transform: translate(-50%, -50%) rotate(-15deg);
+  box-shadow: rgba(0, 0, 0, 0.1) 30px -20px 20px -18px;
+  width: 45px;
+  height: 30px;
+  border-radius: 0px 0px 0px 100px;
+}
+
+.wing_fur3_left_mask {
+  position: absolute;
+  background-color: var(--sec);
+  left: 343px;
+  top: 534px;
+  transform: translate(-50%, -50%) rotate(-15deg);
+  box-shadow: rgba(0, 0, 0, 0.1) 30px -20px 20px -18px;
+  width: 45px;
+  height: 20px;
+  border-radius: 0px 0px 100px 100px;
+}
+
+.face_fur_middle {
+  position: absolute;
+  background-color: var(--pri);
+  left: 50%;
+  top: 280px;
+  transform: translate(-50%, -50%) rotate(45deg);
+  width: 30px;
+  height: 30px;
+  border-radius: 0% 50%;
+  margin: 0px auto;
+}
+
+.face_fur_mask {
+  position: absolute;
+  background-color: var(--sec);
+  left: 518px;
+  top: 254px;
+  transform: translate(-50%, -50%) rotate(-30deg);
+  width: 50px;
+  height: 25px;
+  border-radius: 60px 60px 0px 0px;
+  margin: 0px auto;
+}
+
+.face_upper_left {
+  position: absolute;
+  background-color: var(--pri);
+  left: 47%;
+  top: 340px;
+  transform: translate(-50%, -50%) rotate(180deg);
+  width: 75px;
+  height: 120px;
+  border-radius: 80px;
+  margin: 0px auto;
+}
+
+.face_upper_right {
+  position: absolute;
+  background-color: var(--pri);
+  left: 53%;
+  top: 340px;
+  transform: translate(-50%, -50%) rotate(180deg);
+  width: 75px;
+  height: 120px;
+  border-radius: 80px;
+  margin: 0px auto;
+}
+
+.eye_right {
+  position: absolute;
+  background-color: rgb(92, 92, 92);
+  left: 55%;
+  top: 350px;
+  transform: translate(-50%, -50%) rotate(180deg);
+  width: 20px;
+  height: 10px;
+  border-radius: 10px;
+  margin: 0px auto;
+}
+
+.duck:hover .eye_right {
+  transform: translate(-50%, -50%) rotate(150deg);
+}
+.duck:hover .eye_left {
+  transform: translate(-50%, -50%) rotate(210deg);
+}
+
+.center2 .duck:hover .eye_right_2 {
+  height: 10px;
+  transform: translate(-50%, -50%) rotate(150deg);
+}
+
+.center2 .duck:hover .eye_left_2 {
+  height: 10px;
+  transform: translate(-50%, -50%) rotate(210deg);
+}
+
+.eye_left {
+  position: absolute;
+  background-color: rgb(92, 92, 92);
+  left: 45%;
+  top: 350px;
+  transform: translate(-50%, -50%) rotate(180deg);
+  width: 20px;
+  height: 10px;
+  border-radius: 10px;
+  margin: 0px auto;
+}
+
+.face_lower {
+  position: absolute;
+  background-color: var(--pri);
+  left: 50%;
+  top: 412px;
+  transform: translate(-50%, -50%) rotate(180deg);
+  width: 155px;
+  height: 110px;
+  border-radius: 60px 60px 40px 40px;
+  margin: 0px auto;
+}
+
+.beak_lower {
+  position: absolute;
+  background-color: var(--point);
+  left: 50%;
+  top: 410px;
+  transform: translate(-50%, -50%) rotate(180deg);
+  width: 95px;
+  height: 50px;
+  border-radius: 30px;
+  margin: 0px auto;
+}
+
+.beak_upper {
+  position: absolute;
+  background-color: var(--point);
+  left: 50%;
+  top: 390px;
+  transform: translate(-50%, -50%);
+  width: 95px;
+  height: 40px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 5px 0px;
+  border-radius: 90px 90px 10px 10px;
+  margin: 0px auto;
+}
+
+.egg_middle {
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  left: 50%;
+  top: 160px;
+  transform: translate(-50%, -50%) rotate(45deg);
+  width: 100px;
+  height: 100px;
+  border-radius: 50% 50% 0px;
+  margin: 0px auto;
+  animation: 1s ease 0s infinite alternate none running 중앙알위치;
+}
+
+.egg_right {
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  left: 55%;
+  top: 160px;
+  transform: translate(-50%, -50%) rotate(90deg);
+  width: 100px;
+  height: 100px;
+  border-radius: 100% 0px;
+  margin: 0px auto;
+  animation: 1s ease 0s infinite alternate none running 오른쪽알위치;
+}
+
+.egg_left {
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  left: 45%;
+  top: 160px;
+  transform: translate(-50%, -50%) rotate(180deg);
+  width: 100px;
+  height: 100px;
+  border-radius: 100% 0px;
+  margin: 0px auto;
+  animation: 1s ease 0s infinite alternate none running 왼쪽알위치;
+}
+
+.center2 {
+  position: absolute;
+  top: 50px;
+  left: 0px;
+  transform: scale(0.3);
+}
+
+.face2 .face_lower {
+  top: 440px;
+  height: 200px;
+  border-radius: 30%;
+}
+
+.face2 .eye_right,
+.face2 .eye_left {
+  top: 400px;
+  height: 20px;
+}
+
+.face2 .eye_right,
+.face2 .eye_left {
+  top: 400px;
+  height: 20px;
+}
+
+.face2 .beak_lower {
+  top: 440px;
+  transform: translate(-50%, -50%) scale(0.5);
+}
+
+.face2 .beak_upper {
+  top: 420px;
+  transform: translate(-50%, -50%) scale(0.5);
+}
+
+@keyframes 물둥둥 {
+  0% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes 오리둥둥 {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(20px);
+  }
+}
+
+@keyframes 오른쪽털움직임 {
+  0% {
+    transform: translate(-50%, -50%) rotate(175deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(185deg);
+  }
+}
+
+@keyframes 왼쪽털움직임 {
+  0% {
+    transform: translate(-50%, -50%) rotate(100deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(120deg);
+  }
+}
+
+@keyframes 오른쪽날개푸드덕 {
+  0% {
+    transform: translate(-50%, -50%) rotate(-120deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-130deg);
+  }
+}
+
+/* @keyframes 왼쪽날개푸드덕 {
+  0% {
+    transform: translate(-50%, -50%) rotate(120deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(125deg);
+  }
+} */
+
+@keyframes 오른쪽윙털움직임 {
+  0% {
+    transform: translate(-50%, -50%) rotate(-40deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-50deg);
+  }
+}
+
+@keyframes 윙털움직임 {
+  0% {
+    transform: translate(-50%, -50%) rotate(-50deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-60deg);
+  }
+}
+
+@keyframes 중앙알위치 {
+  0% {
+    transform: translate(-50%, 50%) rotate(45deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+}
+
+@keyframes 오른쪽알위치 {
+  0% {
+    transform: translate(-50%, 50%) rotate(90deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+}
+
+@keyframes 왼쪽알위치 {
+  0% {
+    transform: translate(-50%, 50%) rotate(180deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(180deg);
+  }
+}

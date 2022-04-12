@@ -27,13 +27,13 @@ body {
   justify-content: center;
   align-items: center;
   background-color: rgb(135, 177, 245);
-  top: 590px;
+  top: 720px;
   width: 100%;
   height: 100%;
   animation: 0.7s ease 0s infinite alternate none running 물둥둥;
 }
 
-.water > p {
+.txt-water {
   font-size: 150px;
   color: white;
 }
@@ -43,7 +43,7 @@ body {
   height: 1000px;
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 540px;
   transform: translate(-50%, -50%);
 }
 
@@ -104,6 +104,9 @@ body {
   margin: 0px auto;
 }
 
+.center2 .body_middle {
+  background-color: #fff56d;
+}
 .wing_right {
   position: absolute;
   background-color: var(--pri);
@@ -185,7 +188,6 @@ body {
   left: 325px;
   top: 565px;
   transform: translate(-50%, -50%) rotate(-30deg);
-  /* box-shadow: rgba(0, 0, 0, 0.1) 30px -20px 20px -18px; */
   width: 55px;
   height: 50px;
   border-radius: 0px 0px 0px 100px;
@@ -329,6 +331,10 @@ body {
   margin: 0px auto;
 }
 
+.center2 .face_lower {
+  background-color: #fff56d;
+}
+
 .beak_lower {
   position: absolute;
   background-color: var(--point);
@@ -394,10 +400,12 @@ body {
 }
 
 .center2 {
+  width: 1000px;
+  height: 1000px;
   position: absolute;
-  top: 50px;
-  left: 0px;
-  transform: scale(0.3);
+  left: 34%;
+  top: 680px;
+  transform: translate(-50%, -50%) scale(0.3);
 }
 
 .face2 .face_lower {
@@ -472,15 +480,6 @@ body {
     transform: translate(-50%, -50%) rotate(-130deg);
   }
 }
-
-/* @keyframes 왼쪽날개푸드덕 {
-  0% {
-    transform: translate(-50%, -50%) rotate(120deg);
-  }
-  100% {
-    transform: translate(-50%, -50%) rotate(125deg);
-  }
-} */
 
 @keyframes 오른쪽윙털움직임 {
   0% {
